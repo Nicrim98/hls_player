@@ -1,0 +1,209 @@
+body{
+    background-color: #101010;
+    width: 100%;
+    height: 100%;
+}
+
+div.center{ 
+    margin: 0 auto; 
+    text-align: center;
+    float: center;
+}
+
+.intro{
+   
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    font-size: xx-large;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-style: italic;
+    color: green;
+    text-align: center;
+}
+
+.button{
+    display: inline;
+    text-align: center;
+    
+}
+
+.container{
+    width: 100%;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    overflow: hidden
+}
+
+.controls{
+    display: block;
+    box-sizing: content-box;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: aliceblue;
+    border: 5px solid darkblue;
+    text-align: left;
+}
+
+.video{
+    position: absolute;
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.videoURL{
+    width: 100%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: indianred;
+    border-color: silver;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: teal;
+    border-color: silver;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-sm {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.dropdown {
+  margin: auto;
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+}
+  
+.dropdown-content {
+  width: auto;
+  text-align: left;
+  display: none;
+  position: absolute;
+  background-color: #202020;
+  color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.choose{
+    font-size: x-large;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-style: italic;
+    color: royalblue;
+    text-align: left;
+}
+
+div.stat{
+    border: 36px solid transparent;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    float: right;
+    color: salmon;
+    font-size: large;
+    font-style: italic;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.innerp{
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: space-between;
+}
+
+.movie{
+    text-align: center;
+}
+
+.ptitle{
+    color: aliceblue;
+    text-align: center;
+}
+
+.ltitle{
+    color: aliceblue;
+    text-align: center;
+    font-size: medium;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+.button{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid whitesmoke;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.format{
+    color: red;
+}
+.info{
+    color: salmon;
+    font-size: large;
+    font-style: italic;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.userinput{
+    border: 10px;
+    border-color: whitesmoke;
+    color: whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    font-size: small;
+    text-align: center;
+    font-style: italic;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background: transparent;
+}

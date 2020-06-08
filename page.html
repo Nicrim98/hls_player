@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="">
+    <title>HLS Video Player</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+    <div class="center">
+        <p class="intro">Basic HLS video player</p>
+    </div>
+
+    <div class="dropdown">
+      <span class="choose">Choose content</span>
+        <select id="dropdown-content" class="dropdown-content" onchange="choice()">        
+            <option value="" selected="">Select an exemplary video or enter custom URL below</option>
+            <option id="B" value="P" >Parkour</option>
+            <option id="C" value="B" >Big Buck Bunny</option>
+            <option id="D" value="H" >Dunno</option>
+            <option id="custom" value="custom" >Custom URL</option>
+        </select>
+    </div>
+
+    <div class="movie">
+      <p class="ptitle" id="title"></p>
+      <label id="ltitle" class="ltitle" for="username">URL: </label>
+      <input id="userinput" type="text" class="userinput" name="URL:">
+      <button id="ok" type="submit" class="button" style="animation-delay:0.07s" onclick="choiceButton()">PLAY</button>
+    </div>
+    
+
+    <div class="container">
+        <video id="video" controls></video>
+        <div class="stat">
+          <p class="pstat" id="bitrate">   Bitrate: </p>
+          <p class="pstat" id="height">   Height: </p>
+          <p class="pstat" id="width">   Width: </p>
+          <p class="pstat" id="videoCodec">   Video codec: </p>
+          <p class="pstat" id="audioCodec">   Audio codec: </p>
+          <p class="format" id="format"></p>
+        </div>  
+    </div>
+    
+    <div class="center">
+      <p class="info" id="info">If You want fixed resolution or read video properties, choose below</p>
+      <button id="button2" type="button" class="btn btn-sm btn-success" onclick=" hls.nextLevel=0; fillStats()"> ~240p </button><button type="button" class="btn btn-sm btn-success" onclick=" hls.nextLevel=1; fillStats(1)"> ~360p </button><button type="button" class="btn btn-sm btn-success" onclick=" hls.nextLevel=2; fillStats(2)"> ~480p </button><button type="button" class="btn btn-sm btn-success" onclick="hls.nextLevel=3; fillStats(3)"> ~720p </button><button type="button" class="btn btn-sm btn-success" onclick="hls.nextLevel=4; fillStats(4)"> ~1080p </button>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
